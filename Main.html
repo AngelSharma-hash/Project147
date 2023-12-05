@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene background="color:#000000">
+
+            <!--TV-->
+            <a-plane 
+            id="television" 
+            src="kevin-kn55uhd-139-7-cm-55-4k-ultra-hd-smart-led-tv-black-106489503-db6so.jpg" 
+            position="0.7 6 0.1" 
+            rotation="0 0 0" 
+            width="20" 
+            height="10"></a-plane>
+
+            <!--Chair-->
+            <a-plane id="left_chair" src="pic.png" position="-14 -2 5" width="10" height="10"></a-plane>
+            <a-plane id="right_chair" src="pic.png" position="14 -2 5" width="10" height="10"></a-plane>
+
+            <!--BASE-->
+            <a-box position="0.4 -1 5" width="20" height="1" depth="10" color="brown"></a-box>
+
+            <!--right leg-->
+            <a-box position="10 -5 0.1" width="0.5" height="7" depth="1" color="brown"></a-box>
+            <a-box position="10 -5 9" width="0.5" height="7" depth="1" color="brown"></a-box>
+
+            <!--left leg-->
+            <a-box position="-9 -5 0.1" width="0.5" height="7" depth="1" color="brown"></a-box>
+            <a-box position="-9 -5 9" width="0.5" height="7" depth="1" color="brown"></a-box>
+
+            <a-entity position="0 0 30">
+                <a-camera></a-camera>
+            </a-entity>
+            
+            <!--Front Wall-->
+            <a-entity>
+                <a-box  position="0 2 0" height="20" depth="0.1" width="35" color="pink"></a-box>
+            </a-entity>
+
+            <!--left Wall-->
+            <a-entity>
+                <a-box  position="-17.5 2 0" height="20" depth="22" width="0.1" color="green"></a-box>
+            </a-entity>
+
+            <!--Right Wall-->
+            <a-entity>
+                <a-box  position="17.5 2 0" height="20" depth="22" width="0.1" color="green"></a-box>
+            </a-entity>
+
+            <!--Floor-->
+            <a-entity>
+                <a-box  position="0 -8 3" height="0.1" depth="15" width="35" color="orange"></a-box>
+            </a-entity>
+
+            
+
+        </a-scene>
+    </body>
+
+</html>
